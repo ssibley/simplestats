@@ -13,9 +13,9 @@ def mean(vals):
 def median(vals):
     """please implement this function"""
 	vals.sort()
-	z = len(vals)
-	index = z / 2
-	if z % 2 == 0:
+	length = len(vals)
+	index = length / 2
+	if length % 2 == 0:
 		return mean([vals[index], vals[index - 1]])
     else:
        return vals[index]
